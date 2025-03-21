@@ -28,12 +28,36 @@ html, body {
  .search-input {
     width:100% ;  
     height:100% ;  
-    background-color: rgb(82, 92, 80);
+    background-color: rgba(255, 255, 255, 0);
     border: none;
     color: white;
+    padding-left:20px ;
+}
+ .search-input:focus {
+    border: none;
 }
 
 
 .search-input::placeholder {
     color: white;
+    font-size: 1.5em;
+    mix-blend-mode: overlay;
+    text-transform: uppercase;
+}
+
+
+.item {
+    display: none;
+    background-color: white;
+    mix-blend-mode: overlay;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.804);
+    height: 30px;
+    
+    font-size: 20px;
+}
+
+
+.list {
+    height: 200px;
 }
